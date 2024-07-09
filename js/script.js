@@ -48,6 +48,7 @@ function showResults(userOption) {
   
       resetGameBtn.style.display = "block";
       optionsContainer.style.display = "none";
+      roundResultsMsg.innerText = "";
     }
   
   };
