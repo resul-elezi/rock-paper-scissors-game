@@ -57,9 +57,10 @@ function resetGame() {
     playerScoreSpanElement.innerText = 0;
     computerScore = 0;
     playerScore = 0;
-    roundResultsMsg.innerText = '';
+    roundResultsMsg.innerText = "";
     resetGameBtn.style.display = "none";
     optionsContainer.style.display = "block";
+    winnerMsgElement.innerText = "";
   };
 resetGameBtn.onclick = resetGame;
 
