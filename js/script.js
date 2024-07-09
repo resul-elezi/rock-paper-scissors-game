@@ -52,6 +52,14 @@ function showResults(userOption) {
   
   };
 
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreSpanElement.innerText = 0;
+    computerScoreSpanElement.innerText = 0;
+    roundResultsMsg.innerText = '';
+  };
+
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
