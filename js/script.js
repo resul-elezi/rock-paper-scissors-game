@@ -57,7 +57,6 @@ function resetGame() {
     playerScoreSpanElement.innerText = 0;
     computerScore = 0;
     playerScore = 0;
-    roundResultsMsg.innerText = "";
     resetGameBtn.style.display = "none";
     optionsContainer.style.display = "block";
     winnerMsgElement.innerText = "";
