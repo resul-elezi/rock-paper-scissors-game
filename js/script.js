@@ -3,19 +3,18 @@ function getRandomComputerResult() {
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
   }
-
   
-  function hasPlayerWonTheRound(player, computer) {
-      return (
-          (player === "Rock" && computer === "Scissors") ||
-          (player === "Scissors" && computer === "Paper") ||
-          (player === "Paper" && computer === "Rock")
-        );
-    }
-
+function hasPlayerWonTheRound(player, computer) {
+    return (
+      (player === "Rock" && computer === "Scissors") ||
+      (player === "Scissors" && computer === "Paper") ||
+      (player === "Paper" && computer === "Rock")
+    );
+  }
+  
 let playerScore = 0;
 let computerScore = 0;
-
+  
 function getRoundResults(userOption) {
     const computerResult = getRandomComputerResult();
   
@@ -29,3 +28,4 @@ function getRoundResults(userOption) {
       return `Computer wins! ${computerResult} beats ${userOption}`;
     }
   }
+  
